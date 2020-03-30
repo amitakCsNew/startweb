@@ -1,14 +1,13 @@
 package com.taktak.persistence;
 import java.io.Serializable;
 import java.util.Date;
-import javax.persistence.Entity;
-import javax.persistence.Column;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Employee implements Serializable {
 
     @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Column(name="employe_Nr")
     private Integer employeeNr;
 

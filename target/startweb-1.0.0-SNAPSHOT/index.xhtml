@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:h="http://www.w3.org/1999/xhtml">
+<html   lang="en"
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:ui="http://java.sun.com/jsf/facelets"
+        xmlns:h="http://java.sun.com/jsf/html">
 
 <h:head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>Employee</title>
+    <title>startweb</title>
 </h:head>
 
 <h:body>
     <p>Employees</p>
     <ul>
         <ui:repeat value="#{employeeController.employees}" var="emp">
-            <li>#{emp.employeeNr}</li>
+            <li>#{emp.employeeNo} - #{emp.firstName} #{emp.lastName}</li>
         </ui:repeat>
     </ul>
 </h:body>
