@@ -8,7 +8,7 @@ public class Employee implements Serializable {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    @Column(name="employe_Nr")
+    @Column(name="emp_nr")
     private Integer employeeNr;
 
     @Column(name = "first_name", length = 50)

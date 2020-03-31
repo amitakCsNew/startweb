@@ -17,6 +17,7 @@ public class EmployeeController {
 
     public List<Employee> getEmployees() {
         TypedQuery<Employee> query = em.createQuery("select e from Employee e", Employee.class);
-        return query.getResultList();
+        List<Employee> employees = query.getResultList();
+        return employees;
     }
 }
